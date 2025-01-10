@@ -46,11 +46,7 @@
     width: 25%; /* 左右の幅を設定 */
 }
 
-.content {
-    background-color: white;
-    width: 50%; /* 中央の幅を設定 */
-    padding: 20px;
-}
+
 
 #home{
     position:fixed;
