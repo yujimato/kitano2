@@ -20,21 +20,24 @@ body {
 .button-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2列 */
-    gap: 10px; /* ボタン間の間隔 */
+    gap: 20px; /* ボタン間の間隔 */
     width: 80%; /* 親要素の幅 */
     max-width: 400px; /* 最大幅を指定 */
+    margin: 0 auto; /* 親要素を中央に配置 */
 }
 
 /* 各ボタンのスタイル */
 .button {
-    font-size: 16px;
+    font-size: 20px; /* フォントサイズを大きくする */
     background-color: black;
     color: yellow;
     border: none;
     border-radius: 10px;
-    padding: 15px 10px;
+    padding: 20px 10px; /* ボタンを大きくするためのパディング */
     text-align: center;
     cursor: pointer;
+    width: 100%; /* ボタンがグリッド内で横幅いっぱいに広がる */
+    height: auto; /* 必要に応じて高さを調整 */
 }
 
 /* ホバー時の効果 */
@@ -50,8 +53,8 @@ body {
     }
 
     .button {
-        font-size: 14px; /* ボタンのフォントサイズを調整 */
-        padding: 12px 8px; /* パディングを調整 */
+        font-size: 18px; /* ボタンのフォントサイズを調整 */
+        padding: 15px 10px; /* パディングを調整 */
     }
 }
 </style>
