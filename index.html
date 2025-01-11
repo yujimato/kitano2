@@ -19,29 +19,20 @@
         .button {
             background-color: black;
             color: yellow;
-            font-size: 1.2rem;
+            font-size: 2rem;
             padding: 20px; /* 高さを調整するためにpaddingを増やす */
             border-radius: 10px;
             border: none;
             cursor: pointer;
             text-align: center;
+            width:40%;
+            height:30%
         }
 
         .button:hover {
             background-color: darkgray; /* ホバー時の背景色 */
         }
-        @media screen and (max-width: 768px) {
-            .button {
-                width: 30%; /* 横幅を30%に設定 */
-                height: 20%; /* 高さを20%に設定 */
-            }
-
-            .button-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr); /* 横2列に配置 */
-                gap: 10px; /* ボタン間のスペース */
-            }
-        }
+       
     </style>
     <body>
         <center>
