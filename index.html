@@ -6,12 +6,12 @@
         <title>Home</title>
     </head>
     <style>
-/* ボタン全体を配置するコンテナのスタイル */
+        /* ボタン全体を配置するコンテナのスタイル */
         .button-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 横2列 */
-            gap: 10px; /* ボタン間のスペース */
-            width: 80%; /* コンテナの幅 */
+            gap: 20px; /* ボタン間のスペース */
+            max-width: 400px; /* コンテナの幅 */
             margin: 20px auto; /* コンテナを中央に配置 */
         }
 
@@ -20,17 +20,17 @@
             background-color: black;
             color: yellow;
             font-size: 1.2rem;
-            padding: 15px;
+            padding: 20px; /* 高さを調整するためにpaddingを増やす */
             border-radius: 10px;
             border: none;
             cursor: pointer;
-            width: 100%; /* ボタンを列幅にフィットさせる */
+            text-align: center;
         }
 
         .button:hover {
             background-color: darkgray; /* ホバー時の背景色 */
         }
-</style>
+    </style>
     <body>
         <center>
         <h1>大学入学共通テストまで、あと</h1>
