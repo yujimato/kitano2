@@ -5,6 +5,56 @@
         <link rel="stylesheet" href="kitano.css">
         <title>Home</title>
     </head>
+    <style>
+/* 全体のスタイル */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 画面全体の高さをカバー */
+    margin: 0;
+    background-color: lightgreen;
+}
+
+/* ボタンの親要素 */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    gap: 10px; /* ボタン間の間隔 */
+    width: 80%; /* 親要素の幅 */
+    max-width: 400px; /* 最大幅を指定 */
+}
+
+/* 各ボタンのスタイル */
+.button {
+    font-size: 16px;
+    background-color: black;
+    color: yellow;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ホバー時の効果 */
+.button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* スマホ向け（768px以下） */
+@media screen and (max-width: 768px) {
+    .button-container {
+        width: 90%; /* 親要素の幅をスマホ向けに調整 */
+    }
+
+    .button {
+        font-size: 14px; /* ボタンのフォントサイズを調整 */
+        padding: 12px 8px; /* パディングを調整 */
+    }
+}
+</style>
     <body>
         <center>
         <h1>大学入学共通テストまで、あと</h1>
