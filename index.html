@@ -6,56 +6,27 @@
         <title>Home</title>
     </head>
     <style>
-/* 全体のスタイル */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* 画面全体の高さをカバー */
-    margin: 0;
-    background-color: lightgreen;
-}
-
-/* ボタンの親要素 */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2列 */
-    gap: 20px; /* ボタン間の間隔 */
-    width: 80%; /* 親要素の幅 */
-    max-width: 400px; /* 最大幅を指定 */
-    margin: 0 auto; /* 親要素を中央に配置 */
+    grid-template-columns: repeat(2, 1fr); /* 横2列 */
+    gap: 10px; /* ボタン間のスペース */
+    width: 80%; /* 全体の幅 */
+    margin: 20px auto; /* センター配置 */
 }
 
-/* 各ボタンのスタイル */
-.button {
-    font-size: 20px; /* フォントサイズを大きくする */
+button {
     background-color: black;
     color: yellow;
-    border: none;
+    font-size: 1.2rem;
+    padding: 15px; /* ボタン内の余白 */
     border-radius: 10px;
-    padding: 20px 10px; /* ボタンを大きくするためのパディング */
-    text-align: center;
+    border: none;
     cursor: pointer;
-    width: 100%; /* ボタンがグリッド内で横幅いっぱいに広がる */
-    height: auto; /* 必要に応じて高さを調整 */
+    width: 100%; /* ボタンを列の幅に合わせる */
 }
 
-/* ホバー時の効果 */
-.button:hover {
-    background-color: yellow;
-    color: black;
-}
-
-/* スマホ向け（768px以下） */
-@media screen and (max-width: 768px) {
-    .button-container {
-        width: 90%; /* 親要素の幅をスマホ向けに調整 */
-    }
-
-    .button {
-        font-size: 18px; /* ボタンのフォントサイズを調整 */
-        padding: 15px 10px; /* パディングを調整 */
-    }
+button:hover {
+    background-color: darkgray; /* ホバー時の色変更 */
 }
 </style>
     <body>
