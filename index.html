@@ -6,28 +6,30 @@
         <title>Home</title>
     </head>
     <style>
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 横2列 */
-    gap: 10px; /* ボタン間のスペース */
-    width: 80%; /* 全体の幅 */
-    margin: 20px auto; /* センター配置 */
-}
+/* ボタン全体を配置するコンテナのスタイル */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 横2列 */
+            gap: 10px; /* ボタン間のスペース */
+            width: 80%; /* コンテナの幅 */
+            margin: 20px auto; /* コンテナを中央に配置 */
+        }
 
-button {
-    background-color: black;
-    color: yellow;
-    font-size: 1.2rem;
-    padding: 15px; /* ボタン内の余白 */
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%; /* ボタンを列の幅に合わせる */
-}
+        /* 各ボタンのスタイル */
+        .button {
+            background-color: black;
+            color: yellow;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%; /* ボタンを列幅にフィットさせる */
+        }
 
-button:hover {
-    background-color: darkgray; /* ホバー時の色変更 */
-}
+        .button:hover {
+            background-color: darkgray; /* ホバー時の背景色 */
+        }
 </style>
     <body>
         <center>
